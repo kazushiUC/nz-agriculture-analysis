@@ -13,6 +13,7 @@ fatal: not a git repository (or any of the parent directories): .git
 
 - 5. "git commit -m "Initial project setup""
 
-- 6. git remote add origin "URL"
-
-- 7. "git push -u origin main"
+- 6. 
+git remote add origin https://github.com/kazushiUC/nz-agriculture-analysis.git
+git branch -M main
+git push -u origin main
