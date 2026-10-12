@@ -5,3 +5,14 @@ fatal: not a git repository (or any of the parent directories): .git
 -> type "git init" in a terminal to initialise a Git.
 
 - 2. "git status"
+
+- 3. "git branch -M main"
+-> means creating new branch called "main".
+
+- 4. "git add sth" or "git add ."
+
+- 5. "git commit -m "Initial project setup""
+
+- 6. git remote add origin "URL"
+
+- 7. "git push -u origin main"
