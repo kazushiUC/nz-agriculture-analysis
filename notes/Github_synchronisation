@@ -1,0 +1,7 @@
+## Process of Synchronization
+- 1. "git remote -v"
+fatal: not a git repository (or any of the parent directories): .git
+-> means that current place is not in the Git Repository.
+-> type "git init" in a terminal to initialise a Git.
+
+- 2. "git status"
