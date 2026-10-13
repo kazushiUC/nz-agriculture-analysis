@@ -1,3 +1,5 @@
+## error_solution
+
 ImportError: Missing optional dependency 'package'
 -> need an extra package
 -> "python -m pip install 'package name'"

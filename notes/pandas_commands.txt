@@ -1,0 +1,19 @@
+## pandas_commands
+
+print(df.head(10))
+-> show the first 10 rows and entire columns of the DataFrame.
+
+print(df.shape)
+-> show the number of rows and columns in a dataset like (rows, columns).
+
+print(df.columns)
+-> What are my variables/column names?
+
+print(df.dtypes)
+-> What type of data does each column contain?
+
+print(df.isna())
+-> to show wether each cell has a missing value or not.
+
+print(df.isna().sum())
+-> to show the number of missing values in each columns.

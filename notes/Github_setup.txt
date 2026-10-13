@@ -1,4 +1,5 @@
 ## Process of Synchronization
+
 - 1. "git remote -v"
 fatal: not a git repository (or any of the parent directories): .git
 -> means that current place is not in the Git Repository.

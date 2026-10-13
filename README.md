@@ -38,6 +38,7 @@ data/raw/
 "Seafood"
 "Arable"
 "Processed food and other"
+"Primary industries"
 
 - Relevent years:
 From 2016 to 2025
@@ -50,6 +51,7 @@ From 2016 to 2025
 "Seafood"
 "Arable"
 "Processed food and other products"
+"Primary industries"
 
 - Export value columns/row:
 "Export revenue" is shown by sector, with annual values in the year columns in "Total primary industry exports"
@@ -63,3 +65,4 @@ No provisional labels identified yet.
 - Any unusual labels:
 "2026F" means forecast.
 "Processed food and other products" is a broad combined category.
+"Primary insustries" is used only to show the overall export growth of the entire primary-industry sector.
