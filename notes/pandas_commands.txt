@@ -1,5 +1,10 @@
 ## pandas_commands
 
+df = pd.read_excel(
+    "DataFrame", sheet_name="sheet name", header=header number
+)
+-> load a DataFrame(xlsx format) only containing a specified sheet with a specified header
+
 print(df.head(10))
 -> show the first 10 rows and entire columns of the DataFrame.
 
@@ -17,3 +22,9 @@ print(df.isna())
 
 print(df.isna().sum())
 -> to show the number of missing values in each columns.
+
+df.rename(
+    columns={'original column name': 'ideal column name', 
+             'original column name': 'ideal column name'}
+)
+-> to rename the specified original column name to an ideal column name
