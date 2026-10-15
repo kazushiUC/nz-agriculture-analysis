@@ -1,6 +1,6 @@
 ## Research Question
 
-Which of New Zealand's major primary industory sectors experienced the greatest percentage growth in export value from 2016 to 2025?
+Which of New Zealand's major primary industory sectors experienced the greatest percentage growth in export value from 2006 to 2025?
 
 
 ## Sector-selection decition
