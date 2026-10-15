@@ -49,6 +49,12 @@ df.rename(
 =====
 
 =====
-def.drop(index=0)
+df.drop(index=0)
 -> to drop row 0 form DataFrame
 =====
+
+=====
+df.drop(columns=[2004, 2005])
+-> to drop 2004 column and 2005 column from DataFrame
+=====
+
