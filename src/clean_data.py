@@ -73,9 +73,9 @@ df_clean = df_clean.drop(
 
 
 #===== Gather columns into rows =====
-# print("=="*25)
-# print("Gather columns into rows")
-# print("=="*25)
+print("=="*25)
+print("Gather columns into rows")
+print("=="*25)
 
 df_clean = df_clean.melt(
     id_vars=["sector", "measure", "Units"],
@@ -83,15 +83,14 @@ df_clean = df_clean.melt(
     value_name="export_value"
 )
 
-# print(df_clean.columns)
-# print(df_clean.shape)
-# print(df_clean.isna().sum())
-# print(df_clean.head(80))
-# print(df_clean.dtypes)
-# print(df_clean.describe())
-
-# print("=="*25)
-# print("=="*25)
+print(df_clean.columns)
+print(df_clean.shape)
+print(df_clean.isna().sum())
+print(df_clean.head(80))
+print(df_clean.dtypes)
+print(df_clean.describe())
+print("=="*25)
+print("=="*25)
 
 
 #===== Save the DataFrame as "xyz.csv" form =====

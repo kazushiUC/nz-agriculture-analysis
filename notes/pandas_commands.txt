@@ -8,6 +8,17 @@ df = pd.read_excel(
 =====
 
 =====
+df.to_csv(
+    "pathway",
+    index=False
+)
+-> save the DataFrame as "xyz.csv" form in the identified pathway.
+index=True   -> save the row index
+index=False  -> do not save the row index
+nothing      -> same as index=True
+=====
+
+=====
 print(df.head(10))
 -> show the first 10 rows and entire columns of the DataFrame.
 =====
@@ -58,3 +69,14 @@ df.drop(columns=[2004, 2005])
 -> to drop 2004 column and 2005 column from DataFrame
 =====
 
+=====
+df.melt(
+    id_vars=["sector", "measure", "Units"],
+    var_name="year",
+    value_name="export_value"
+)
+-> to reshape a DataFrame from wide format to long format
+-> "id_vars=[]" columns to keep fixed.
+-> "var_name=''" names for the old column headers.
+-> "value_name''" names for the old cell values.
+=====
