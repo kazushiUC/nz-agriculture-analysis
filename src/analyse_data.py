@@ -80,7 +80,7 @@ df_growth.to_csv(
     index=False
 )
 
-df_growth = df_primary.reset_index()
+df_primary = df_primary.reset_index()
 
 df_primary.to_csv(
     "output/primary_growth_2016_2025.csv",
