@@ -98,6 +98,7 @@ df.pivot(
 -> "index=[]" means which column should identify each row in the new table.
 -> "column=''" means which column contains the values that should become new column headers.
 -> "value=''" means which column contains the actual numbers that should fill the new table.
+=====
 
 =====
 df."column name".value_counts()
@@ -107,3 +108,24 @@ df."column name".value_counts()
 =====
 df[df["year"].isin([2016, 2025])]
 -> to select rows in the identified condition.
+=====
+
+=====
+df.loc[
+    "Primary industries"
+]
+-> select the row labeled "Primary industries" as a single index label.
+
+df.loc[
+    ["Primary industries"]
+]
+-> select a list of index labels containing "Primary industries".
+=====
+
+=====
+df.sort_values(
+    ascending=false
+)
+-> sort values by ascending or descending
+-> ascending=True -> lowest to highest
+-> ascending=False -> highest to lowest
