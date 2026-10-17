@@ -55,7 +55,7 @@ df.rename(
 )
 -> to rename the specified original column name to an ideal column name
 
-!!!What's the difference between including "inplace=True" and not.!!
+!!! What's the difference between including "inplace=True" and not. !!!
 -> pandas modifies df itself.
 =====
 
@@ -75,8 +75,35 @@ df.melt(
     var_name="year",
     value_name="export_value"
 )
--> to reshape a DataFrame from wide format to long format
+-> to reshape a DataFrame from wide format to long format.
 -> "id_vars=[]" columns to keep fixed.
 -> "var_name=''" names for the old column headers.
 -> "value_name''" names for the old cell values.
+
+!!! what is the benefits of long format and wide format !!!
+Long format
+-> better for general analysis and time-series work.
+
+Wide format
+-> sometimes easier for direct comparison between specific years.
 =====
+
+=====
+df.pivot(
+    index=["sector","measure","Units"],
+    columns="year",
+    values="export_value"
+)
+-> to reshape a DataFrame from long format into wide format
+-> "index=[]" means which column should identify each row in the new table.
+-> "column=''" means which column contains the values that should become new column headers.
+-> "value=''" means which column contains the actual numbers that should fill the new table.
+
+=====
+df."column name".value_counts()
+-> to show the number of values in column name.
+=====
+
+=====
+df[df["year"].isin([2016, 2025])]
+-> to select rows in the identified condition.
