@@ -76,10 +76,13 @@ df_growth = df_growth.reset_index()
 print(df_growth)
 
 df_growth.to_csv(
-    "data/processed/sector_growth_2016_2025.csv",
+    "output/sector_growth_2016_2025.csv",
     index=False
 )
 
+df_growth = df_primary.reset_index()
+
 df_primary.to_csv(
-    "data/processed/primary_growth_2016_2025.csv"
+    "output/primary_growth_2016_2025.csv",
+    index=False
 )
