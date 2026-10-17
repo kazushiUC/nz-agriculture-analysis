@@ -69,3 +69,17 @@ print(df_growth.head(7))
 
 print("=="*25)
 print("=="*25)
+
+
+#===== Save the DataFrame as "xyz.csv" form =====
+df_growth = df_growth.reset_index()
+print(df_growth)
+
+df_growth.to_csv(
+    "data/processed/sector_growth_2016_2025.csv",
+    index=False
+)
+
+df_primary.to_csv(
+    "data/processed/primary_growth_2016_2025.csv"
+)
